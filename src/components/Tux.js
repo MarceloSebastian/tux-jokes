@@ -13,6 +13,11 @@ const Container = styled.div`
     font-size: 60px;
     text-align: center;
     margin-top: 20px;
+
+    span {
+      display: block;
+      font-size: 15px;
+    }
   }
 
   figure {
@@ -30,7 +35,7 @@ const Container = styled.div`
 const Tux = ({ setCharge }) => {
   return ( 
     <Container>
-      <h1>Tux Telling Some Programing Jokes</h1>
+      <h1>Tux Telling Some Programing Jokes <span>( Click Him )</span></h1>
       <figure>
         <img src={image} 
           alt="tux"
